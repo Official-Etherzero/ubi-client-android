@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_bg"
+    android:orientation="vertical"
+    tools:context=".modules.robot.teamRobot.TeamRobotActivity">
+
+    <include layout="@layout/title_project" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="22.5dp"
+            android:layout_marginStart="22.5dp"
+            android:background="@mipmap/team_title_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/node_total_oreward"
+                android:textColor="#60FFFFFF"
+                android:textSize="@dimen/zt_13sp" />
+
+            <com.ubiRobot.view.MText
+                android:id="@+id/team_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textColor="@color/zt_fff"
+                android:textSize="@dimen/zt_30sp"
+                app:customTFont="BEBAS__.ttf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/team_personal_num"
+                        android:textColor="#60FFFFFF"
+                        android:textSize="@dimen/zt_11sp" />
+
+                    <TextView
+                        android:id="@+id/team_personal_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/zt_fff"
+                        android:textSize="@dimen/zt_13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/team_robot_num"
+                        android:textColor="#60FFFFFF"
+                        android:textSize="@dimen/zt_11sp" />
+
+                    <TextView
+                        android:id="@+id/team_robot_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/zt_fff"
+                        android:textSize="@dimen/zt_13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/team_node_zrjl"
+                        android:textColor="#60FFFFFF"
+                        android:textSize="@dimen/zt_11sp" />
+
+                    <TextView
+                        android:id="@+id/team_zrjl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/zt_fff"
+                        android:textSize="@dimen/zt_13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/team_jlmx"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:layout_marginEnd="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_send_bg"
+            android:gravity="center"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:text="@string/team_node_jlmx"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_12sp" />
+
+        <ImageView
+            android:id="@+id/team_leve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="8dp" />
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/team_node_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        android:paddingBottom="40dp" />
+
+</LinearLayout>

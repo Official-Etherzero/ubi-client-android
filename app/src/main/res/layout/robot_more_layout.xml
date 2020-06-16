@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/robot_more"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#60000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/robot_more_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:paddingEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/bread_dialog_rounded"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/robot_buy_log"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="19dp"
+            android:drawableLeft="@mipmap/robot_jilu"
+            android:drawablePadding="7dp"
+            android:gravity="center_vertical"
+            android:text="@string/robot_buy_log"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_14sp" />
+
+        <TextView
+            android:id="@+id/robot_transfer_the_money"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="19dp"
+            android:drawableLeft="@mipmap/huazhan"
+            android:drawablePadding="7dp"
+            android:gravity="center_vertical"
+            android:text="@string/robot_transfer_the_money"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_14sp" />
+
+        <TextView
+            android:id="@+id/robot_rewards_record"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="19dp"
+            android:drawableLeft="@mipmap/robot_jiangli"
+            android:drawablePadding="7dp"
+            android:gravity="center_vertical"
+            android:text="@string/robot_rewards_record"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/robot_item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/primary"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/robot_item_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_15sp"
+            android:textStyle="bold"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/robot_item_date1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/robot_item_class"
+            android:layout_below="@+id/robot_item_class"
+            android:layout_marginTop="10dp"
+            android:text="@string/robot_open_date"
+            android:textColor="#50ffffff"
+            android:textSize="@dimen/zt_12sp" />
+
+        <TextView
+            android:id="@+id/robot_item_dateopen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/robot_item_date1"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/robot_item_date1"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_12sp" />
+
+        <TextView
+            android:id="@+id/robot_item_date2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/robot_item_date1"
+            android:layout_below="@+id/robot_item_date1"
+            android:layout_marginTop="10dp"
+            android:text="@string/robot_close_date"
+            android:textColor="#50ffffff"
+            android:textSize="@dimen/zt_12sp" />
+
+        <TextView
+            android:id="@+id/robot_item_dateclose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/robot_item_date2"
+            android:layout_alignStart="@+id/robot_item_dateopen"
+            android:layout_toEndOf="@+id/robot_item_date2"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_12sp" />
+
+
+        <com.ubiRobot.view.RingProgressView
+            android:id="@+id/robot_item_wpv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            app:maxProgress="100"
+            app:ringColor="#10ffffff"
+            app:ringProgressColor="#FFD060"
+            app:ringWidth="4dp"
+            app:textColor="#FFD060"
+            app:textSize="18sp"
+         />
+    </RelativeLayout>
+
+</LinearLayout>

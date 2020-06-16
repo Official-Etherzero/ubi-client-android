@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/new_bg1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp">
+
+        <TextView
+            android:id="@+id/item_order_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="left"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_14sp" />
+
+        <TextView
+            android:id="@+id/item_order_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="left"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_14sp" />
+
+        <TextView
+            android:id="@+id/item_order_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="left"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_14sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:background="@drawable/cancel_btn_bg"
+                android:gravity="center"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="@string/c2c_sell"
+                android:textColor="@color/zt_lu"
+                android:textSize="@dimen/zt_12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:background="#131930" />
+</LinearLayout>
+

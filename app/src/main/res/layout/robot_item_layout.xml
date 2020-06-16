@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/robot_bg"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="17dp"
+        android:background="@mipmap/primary">
+
+        <TextView
+            android:id="@+id/robot_rclass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/robot_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/robot_daily_output"
+            android:textColor="#50ffffff"
+            android:textSize="@dimen/zt_12sp"
+            app:layout_constraintStart_toStartOf="@+id/robot_rclass"
+            app:layout_constraintTop_toBottomOf="@+id/robot_rclass" />
+
+        <TextView
+            android:id="@+id/robot_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/robot_period"
+            android:textColor="#50ffffff"
+            android:textSize="@dimen/zt_12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/robot_rclass" />
+
+        <TextView
+            android:id="@+id/robot_mrcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/robot_tv"
+            app:layout_constraintStart_toEndOf="@+id/robot_tv" />
+
+        <TextView
+            android:id="@+id/robot_period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/robot_tv1"
+            app:layout_constraintStart_toStartOf="@+id/robot_mrcc" />
+
+        <TextView
+            android:id="@+id/robot_num"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/robot_shengyu_bg"
+            android:gravity="center"
+            android:textColor="#FF6B3D"
+            android:textSize="@dimen/zt_11sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/robot_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>

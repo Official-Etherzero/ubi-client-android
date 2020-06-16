@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="22dp"
+    android:layout_marginRight="22dp">
+    <!--1-->
+    <LinearLayout
+        android:id="@+id/ll_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_code1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/mnemonic_backup_bg"
+                android:gravity="center"
+                android:textColor="@color/zt_fff"
+                android:maxEms="1"
+                android:textSize="@dimen/zt_24sp" />
+        </LinearLayout>
+        <!--2-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_code2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/mnemonic_backup_bg"
+                android:textColor="@color/zt_fff"
+                android:gravity="center"
+                android:maxEms="1"
+                android:textSize="@dimen/zt_24sp" />
+        </LinearLayout>
+        <!--3-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_code3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/mnemonic_backup_bg"
+                android:textColor="@color/zt_fff"
+                android:gravity="center"
+                android:maxEms="1"
+                android:textSize="@dimen/zt_24sp" />
+        </LinearLayout>
+        <!--4-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_code4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/mnemonic_backup_bg"
+                android:textColor="@color/zt_fff"
+                android:gravity="center"
+                android:maxEms="1"
+                android:textSize="@dimen/zt_24sp" />
+        </LinearLayout>
+        <!--5-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_code5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/mnemonic_backup_bg"
+                android:textColor="@color/zt_fff"
+                android:gravity="center"
+                android:maxEms="1"
+                android:textSize="@dimen/zt_24sp" />
+        </LinearLayout>
+        <!--6-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_code6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/mnemonic_backup_bg"
+                android:textColor="@color/zt_fff"
+                android:gravity="center"
+                android:maxEms="1"
+                android:textSize="@dimen/zt_24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_code"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/ll_code"
+        android:layout_alignTop="@+id/ll_code"
+        android:background="@android:color/transparent"
+        android:cursorVisible="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="number"
+        android:textColor="@android:color/transparent" />
+</RelativeLayout>

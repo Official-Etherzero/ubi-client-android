@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/market_more"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/market_more_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/bread_dialog_rounded"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingEnd="20dp">
+
+        <TextView
+            android:id="@+id/market_order_record"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="19dp"
+            android:drawableLeft="@mipmap/robot_jilu"
+            android:drawablePadding="7dp"
+            android:gravity="center_vertical"
+            android:text="@string/order_record"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="38dp"
+    android:layout_marginEnd="38dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="300dp"
+        android:layout_height="175dp"
+        android:background="@mipmap/trade_bg"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+
+        <TextView
+            android:id="@+id/trading_lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/trading_card_lab"
+            android:textColor="#CBD9FF"
+            android:textSize="@dimen/zt_11sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.ubiRobot.view.MText
+            android:id="@+id/trading_total_value"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="3dp"
+            android:text="--"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_24sp"
+            app:customTFont="BEBAS__.ttf"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trading_lab" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="69dp"
+            android:background="#10ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="3dp"
+                android:text="@string/trading_card_frozen_lab"
+                android:textColor="#CBD9FF"
+                android:textSize="@dimen/zt_10sp" />
+
+            <TextView
+                android:id="@+id/trading_frozen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="3dp"
+                android:text="--"
+                android:textColor="@color/zt_fff"
+                android:textSize="@dimen/zt_12sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="3dp"
+                android:text="@string/trading_card_available_lab"
+                android:textColor="#CBD9FF"
+                android:textSize="@dimen/zt_10sp" />
+
+            <TextView
+                android:id="@+id/trading_avai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="3dp"
+                android:text="--"
+                android:textColor="@color/zt_fff"
+                android:textSize="@dimen/zt_12sp" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

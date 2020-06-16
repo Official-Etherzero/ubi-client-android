@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="145dp">
+
+    <TextView
+        android:id="@+id/deal_address"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:textColor="@color/zt_fff"
+        android:textSize="@dimen/zt_15sp" />
+
+    <TextView
+        android:id="@+id/deal_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/deal_address"
+        android:layout_below="@+id/deal_address"
+        android:layout_marginTop="15dp"
+        android:text="@string/count"
+        android:textColor="#507D87A0"
+        android:textSize="@dimen/zt_12sp" />
+
+    <TextView
+        android:id="@+id/deal_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/deal_count_tv"
+        android:layout_alignStart="@+id/deal_total"
+        android:layout_toEndOf="@+id/deal_count_tv"
+        android:textColor="@color/zt_fff"
+        android:textSize="@dimen/zt_12sp" />
+
+    <TextView
+        android:id="@+id/deal_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/deal_count_tv"
+        android:layout_below="@+id/deal_count_tv"
+        android:layout_marginTop="10dp"
+        android:text="@string/unit_price"
+        android:textColor="#507D87A0"
+        android:textSize="@dimen/zt_12sp" />
+
+    <TextView
+        android:id="@+id/deal_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/deal_price_tv"
+        android:layout_alignStart="@+id/deal_total"
+        android:layout_toEndOf="@+id/deal_price_tv"
+        android:textColor="@color/zt_fff"
+        android:textSize="@dimen/zt_12sp" />
+
+    <TextView
+        android:id="@+id/deal_total_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/deal_price_tv"
+        android:layout_below="@+id/deal_price_tv"
+        android:layout_marginTop="10dp"
+        android:text="@string/total_prices"
+        android:textColor="#507D87A0"
+        android:textSize="@dimen/zt_12sp" />
+
+    <TextView
+        android:id="@+id/deal_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/deal_total_tv"
+        android:layout_marginBottom="-3dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/deal_total_tv"
+        android:textColor="@color/zt_buy"
+        android:textSize="@dimen/zt_18sp" />
+
+    <TextView
+        android:id="@+id/market_buy_btn"
+        android:layout_width="85dp"
+        android:layout_height="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/buy_btn_bg"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/zt_14sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="22dp"
+        android:background="@color/line" />
+
+
+</RelativeLayout>

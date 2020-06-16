@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_bg"
+    android:orientation="vertical"
+    tools:context=".modules.user.rigest.RegisterActivity">
+
+    <include layout="@layout/title_project" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/phone_acc"
+                android:textColor="@color/zt_fff"
+                android:textSize="@dimen/zt_14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="+86"
+                android:textColor="@color/zt_lu"
+                android:textSize="@dimen/zt_14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/register_phone"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="4"
+                android:background="@color/new_bg"
+                android:ems="10"
+                android:hint="@string/phone_num"
+                android:inputType="phone"
+                android:paddingStart="6dp"
+                android:textColor="@color/zt_fff"
+                android:textColorHint="@color/zt_et_hint"
+                android:textSize="@dimen/zt_14sp" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="22dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="@string/login_pwd"
+                android:textColor="@color/zt_fff"
+                android:textSize="@dimen/zt_14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/register_pwd"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="4"
+                android:background="@color/new_bg"
+                android:ems="10"
+                android:hint="@string/login_hint_pwd"
+                android:inputType="textPassword"
+                android:paddingStart="6dp"
+                android:textColor="@color/zt_fff"
+                android:textColorHint="@color/zt_et_hint"
+                android:textSize="@dimen/zt_14sp"
+                tools:ignore="RtlSymmetry,TextFields" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="22dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="@string/confirm_password"
+                android:textColor="@color/zt_fff"
+                android:textSize="@dimen/zt_14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/register_confirm_pwd"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="4"
+                android:background="@color/new_bg"
+                android:ems="10"
+                android:hint="@string/confirm_password_hint"
+                android:inputType="textPassword"
+                android:paddingStart="6dp"
+                android:textColor="@color/zt_fff"
+                android:textColorHint="@color/zt_et_hint"
+                android:textSize="@dimen/zt_14sp"
+                tools:ignore="RtlSymmetry,TextFields" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="22dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="@string/security_code"
+                android:textColor="@color/zt_fff"
+                android:textSize="@dimen/zt_14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/register_security_code"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2.5"
+                android:background="@color/new_bg"
+                android:ems="10"
+                android:hint="@string/input_security_code"
+                android:inputType="number"
+                android:paddingStart="6dp"
+                android:textColor="@color/zt_fff"
+                android:textColorHint="@color/zt_et_hint"
+                android:textSize="@dimen/zt_14sp"
+                tools:ignore="RtlSymmetry,TextFields" />
+
+            <TextView
+                android:id="@+id/get_security_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="@string/get_security_code"
+                android:textColor="@color/zt_lu"
+                android:textSize="@dimen/zt_14sp" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="22dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="@string/Invitation_code"
+                android:textColor="@color/zt_fff"
+                android:textSize="@dimen/zt_14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/register_invitation_code"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="4"
+                android:background="@color/new_bg"
+                android:ems="10"
+                android:hint="@string/input_Invitation_code"
+                android:inputType="number"
+                android:paddingStart="6dp"
+                android:textColor="@color/zt_fff"
+                android:textColorHint="@color/zt_et_hint"
+                android:textSize="@dimen/zt_14sp"
+                tools:ignore="RtlSymmetry,TextFields" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/btn_rigest"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/create_wallet_btn_bg_selector"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/rigest"
+        android:textColor="@color/white"
+        android:textSize="@dimen/zt_16sp" />
+</LinearLayout>

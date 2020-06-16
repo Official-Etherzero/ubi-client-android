@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bread_dialog_rounded"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/confirm_address_hint"
+            android:textColor="@color/zt_lab"
+            android:textSize="@dimen/zt_12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/usdt_addr"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_12sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/address_affirm"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:background="@drawable/create_wallet_enable_btn_bg_shape"
+            android:text="@string/input_pwd_dialog_confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/zt_13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

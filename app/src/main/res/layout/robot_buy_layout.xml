@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <FrameLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bread_dialog_rounded"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/robot_order_details"
+                android:textColor="@color/zt_fff"
+                android:textSize="@dimen/zt_18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/robot_buy_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/zt_fff"
+                    android:textSize="@dimen/zt_13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/robot_create_time_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/robot_buy_class"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/robot_create_time"
+                    android:textColor="@color/zt_lab1"
+                    android:textSize="@dimen/zt_11sp" />
+
+                <TextView
+                    android:id="@+id/robot_create_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/robot_create_time_tab"
+                    android:layout_alignParentRight="true"
+                    android:text="2019-10-11 12:09:09"
+                    android:textColor="#80ffffff"
+                    android:textSize="@dimen/zt_11sp" />
+
+                <TextView
+                    android:id="@+id/robot_period_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/robot_create_time_tab"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/robot_period"
+                    android:textColor="@color/zt_lab1"
+                    android:textSize="@dimen/zt_11sp" />
+
+                <TextView
+                    android:id="@+id/robot_period"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/robot_period_tab"
+                    android:layout_alignParentRight="true"
+                    android:text="30天"
+                    android:textColor="#80ffffff"
+                    android:textSize="@dimen/zt_11sp" />
+
+                <TextView
+                    android:id="@+id/robot_close_time_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/robot_period_tab"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/robot_colse_time"
+                    android:textColor="@color/zt_lab1"
+                    android:textSize="@dimen/zt_11sp" />
+
+                <TextView
+                    android:id="@+id/robot_close_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/robot_close_time_tab"
+                    android:layout_alignParentRight="true"
+                    android:text="2019-10-11 12:09:09"
+                    android:textColor="#80ffffff"
+                    android:textSize="@dimen/zt_11sp" />
+
+                <TextView
+                    android:id="@+id/robot_day_output_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/robot_close_time_tab"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/robot_estimated_daily_output"
+                    android:textColor="@color/zt_lab1"
+                    android:textSize="@dimen/zt_11sp" />
+
+                <TextView
+                    android:id="@+id/robot_day_output"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/robot_day_output_tab"
+                    android:layout_alignParentRight="true"
+                    android:text="0.001 UBI"
+                    android:textColor="@color/zt_red"
+                    android:textSize="@dimen/zt_11sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/robot_buy_pwd"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/etc_transfer_hex_data_et_shape"
+                android:gravity="center"
+                android:hint="@string/robot_buy_pwd"
+                android:inputType="textPassword"
+                android:textColor="@color/zt_fff"
+                android:textColorHint="#407D87A0"
+                android:textSize="@dimen/zt_12sp" />
+
+            <Button
+                android:id="@+id/robot_buy_confirm"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/create_wallet_enable_btn_bg_shape"
+                android:text="@string/input_pwd_dialog_confirm"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/zt_13sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/robot_buy_cancel"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/popup_close" />
+    </FrameLayout>
+</LinearLayout>

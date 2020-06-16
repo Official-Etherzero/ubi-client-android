@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/ubiasset_bg"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.ubiRobot.view.MText
+                android:id="@+id/ubi_total_value"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="0.00"
+                android:textColor="@color/zt_fff"
+                android:textSize="@dimen/zt_24sp"
+                app:customTFont="BEBAS__.ttf" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:text="UBI"
+                android:textColor="@color/zt_fff"
+                android:textSize="@dimen/zt_13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/wallet_card_address"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/proterty_copy"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="#CBD9FF"
+            android:textSize="@dimen/zt_11sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="45dp"
+            android:background="#10ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/wallte_send"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:background="@drawable/card_send_bg"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/wallet_receice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="3dp"
+                android:drawableStart="@mipmap/property_zhuanzhang"
+                android:gravity="center"
+                android:text="@string/Button.send"
+                android:textColor="#CBD9FF"
+                android:textSize="@dimen/zt_11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wallet_receice"
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wallet_transfer"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:background="@drawable/card_send_bg"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/wallet_receice"
+            app:layout_constraintTop_toBottomOf="@+id/view">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="3dp"
+                android:drawableStart="@mipmap/property_shoukuan"
+                android:gravity="center"
+                android:text="@string/Button.receive"
+                android:textColor="#CBD9FF"
+                android:textSize="@dimen/zt_11sp" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

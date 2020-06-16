@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lly_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7.5dp"
+        android:layout_marginRight="7.5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bg_lu_huang"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_mnemonic_word"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:textColor="@color/zt_fff" />
+
+        <!--<View-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:background="@color/mine_menu_divider_color" />-->
+    </LinearLayout>
+
+</LinearLayout>

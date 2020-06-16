@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_bg"
+    android:orientation="vertical"
+    tools:context=".modules.robot.RobotInfoActivity">
+
+    <include layout="@layout/title_project" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/robot_info_title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/robot_date1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/robot_open_date"
+            android:textColor="#50ffffff"
+            android:textSize="@dimen/zt_12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/robot_date2"
+            app:layout_constraintStart_toStartOf="@+id/robot_date2" />
+
+        <TextView
+            android:id="@+id/robot_date_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="2019/09/09  09:09:00"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/robot_date1"
+            app:layout_constraintStart_toEndOf="@+id/robot_date1" />
+
+        <TextView
+            android:id="@+id/robot_date2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginStart="15dp"
+            android:text="@string/robot_close_date"
+            android:textColor="#50ffffff"
+            android:textSize="@dimen/zt_12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/robot_date_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/robot_date2"
+            app:layout_constraintStart_toStartOf="@+id/robot_date_open" />
+
+        <TextView
+            android:id="@+id/robot_sy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/Cumulative_Revenue_UBI"
+            android:textColor="#50ffffff"
+            android:textSize="@dimen/zt_12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.ubiRobot.view.MText
+            android:id="@+id/robot_ljsy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="0.00"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_24sp"
+            app:customTFont="BEBAS__.ttf"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/robot_sy" />
+
+
+        <com.ubiRobot.view.RingProgressView
+            android:id="@+id/robot_progress"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            app:currentProgress="75"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:maxProgress="100"
+            app:ringColor="#10ffffff"
+            app:ringProgressColor="#FFD060"
+            app:ringWidth="4dp"
+            app:textColor="#FFD060"
+            app:textSize="18sp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="22dp"
+        android:text="@string/gain_recording"
+        android:textColor="@color/zt_fff"
+        android:textSize="@dimen/zt_18sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/robot_info_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false" />
+
+        <LinearLayout
+            android:id="@+id/robot_not_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/robot" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/No_record"
+                android:textColor="@color/zt_fff"
+                android:textSize="@dimen/zt_14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

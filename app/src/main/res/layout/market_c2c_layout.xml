@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_bg"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:paddingTop="17dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/market"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/c2c_refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ubiRobot.view.VerticalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/c2c_bg2"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:text="@string/c2c_data"
+                    android:textColor="@color/zt_fff"
+                    android:textSize="@dimen/zt_14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/c2c_bg1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingStart="16dp">
+
+                        <TextView
+                            android:id="@+id/c2c_zjcj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/c2c_zjcj"
+                            android:textColor="#3AE9DF"
+                            android:textSize="@dimen/zt_12sp" />
+
+
+                        <TextView
+                            android:id="@+id/c2c_zdj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/c2c_zdj"
+                            android:textColor="#3AE9DF"
+                            android:textSize="@dimen/zt_12sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingEnd="15dp">
+
+                        <TextView
+                            android:id="@+id/c2c_qgd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/c2c_qgd"
+                            android:textColor="#3AE9DF"
+                            android:textSize="@dimen/zt_12sp" />
+
+                        <TextView
+                            android:id="@+id/c2c_qgzl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/c2c_qgzl"
+                            android:textColor="#3AE9DF"
+                            android:textSize="@dimen/zt_12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/c2c_bg2"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/c2c_fasq"
+                        android:textColor="@color/zt_fff"
+                        android:textSize="@dimen/zt_14sp" />
+
+                    <TextView
+                        android:id="@+id/c2c_order_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:drawableEnd="@mipmap/c2c_order_record"
+                        android:drawablePadding="5dp"
+                        android:text="@string/order_record"
+                        android:textColor="@color/zt_fff"
+                        android:textSize="@dimen/zt_14sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/c2c_bg1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/c2c_buy_count"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:background="#252C4D"
+                            android:hint="@string/c2c_buy_hint"
+                            android:inputType="number"
+                            android:paddingStart="15dp"
+                            android:textColor="@color/zt_fff"
+                            android:textColorHint="#87A4E5"
+                            android:textSize="@dimen/zt_14sp"
+                            tools:ignore="RtlSymmetry" />
+
+                        <EditText
+                            android:id="@+id/c2c_buy_price"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="#252C4D"
+                            android:hint="@string/c2c_buy_price"
+                            android:inputType="numberDecimal"
+                            android:paddingStart="15dp"
+                            android:textColor="@color/zt_fff"
+                            android:textColorHint="#87A4E5"
+                            android:textSize="@dimen/zt_14sp"
+                            tools:ignore="RtlSymmetry" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/c2c_buy_btn"
+                        android:layout_width="250dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/create_wallet_enable_btn_bg_shape"
+                        android:gravity="center"
+                        android:text="@string/c2c_buy"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/zt_15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/c2c_buy_hint1"
+                        android:textColor="#5D76AE"
+                        android:textSize="@dimen/zt_12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/c2c_buy_hint2"
+                        android:textColor="#5D76AE"
+                        android:textSize="@dimen/zt_12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/c2c_buy_hint3"
+                        android:textColor="#5D76AE"
+                        android:textSize="@dimen/zt_12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/mnemonic_backup_bg"
+                    android:orientation="vertical"
+                    android:paddingBottom="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingEnd="12dp"
+                        android:paddingStart="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="left"
+                            android:text="@string/order_number"
+                            android:textColor="#899AE4"
+                            android:textSize="@dimen/zt_14sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:gravity="left"
+                            android:text="@string/count"
+                            android:textColor="#899AE4"
+                            android:textSize="@dimen/zt_14sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="left"
+                            android:text="@string/unit_price"
+                            android:textColor="#899AE4"
+                            android:textSize="@dimen/zt_14sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:gravity="center"
+                            android:text="@string/operating"
+                            android:textColor="#899AE4"
+                            android:textSize="@dimen/zt_14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#131930" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/c2c_order_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="450dp"
+                        android:clipToPadding="false" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </com.ubiRobot.view.VerticalScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

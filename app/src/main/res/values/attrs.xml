@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="color_bg_main" format="color" />
+    <attr name="text_one_style" format="color" />
+    <attr name="text_two_style" format="color" />
+    <attr name="line_style" format="color" />
+    <attr name="item_bg" format="color" />
+    <attr name="empty_style" format="reference" />
+    <attr name="item_color__style" format="color" />
+
+    <declare-styleable name="MButton">
+        <attr name="isBreadButton" format="boolean" />
+        <attr name="buttonType" format="integer" />
+        <attr name="customBFont" format="string" />
+        <attr name="hasShadow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MText">
+        <attr name="customTFont" format="string" />
+    </declare-styleable>
+    <declare-styleable name="MEdit">
+        <attr name="customEFont" format="string" />
+    </declare-styleable>
+    <declare-styleable name="BRNotificationBar">
+        <attr name="breadText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="LoadingView">
+        <attr name="loadding_color" format="color" />
+        <attr name="ring_style" format="enum">
+            <enum name="square" value="0" />
+            <enum name="round" value="1" />
+        </attr>
+        <attr name="progress_style" format="enum">
+            <enum name="material" value="0" />
+            <enum name="linear" value="1" />
+        </attr>
+
+        <attr name="ring_width" format="dimension" />
+        <attr name="ring_radius" format="dimension" />
+    </declare-styleable>
+
+    <attr name="bindingText">
+        <enum name="none" value="0" />
+        <enum name="top_text" value="1" />
+        <enum name="center_text" value="2" />
+        <enum name="bottom_text" value="3" />
+    </attr>
+
+    <declare-styleable name="CircleProgressView">
+        <!--画笔宽度-->
+        <attr name="progress_width" format="dimension" />
+        <!--画笔颜色-->
+        <attr name="progress_color" format="color" />
+        <!--加载进度起始位置-->
+        <attr name="location_start" format="enum">
+            <enum name="left" value="1" />
+            <enum name="top" value="2" />
+            <enum name="right" value="3" />
+            <enum name="bottom" value="4" />
+        </attr>
+    </declare-styleable>
+    <!-- 自定义环形进度条的属性-->
+    <declare-styleable name="RingProgressView">
+        <attr name="ringColor" format="color"/>
+        <attr name="ringProgressColor" format="color"/>
+        <attr name="ringWidth" format="dimension"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+        <attr name="currentProgress" format="integer"/>
+        <attr name="maxProgress" format="integer"/>
+    </declare-styleable>
+</resources>

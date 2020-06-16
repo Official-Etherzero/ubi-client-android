@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="38dp"
+    android:layout_marginEnd="38dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="175dp"
+        android:background="@mipmap/robot_bg"
+        android:gravity="center"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/robot_card_lab"
+                android:textColor="#CBD9FF"
+                android:textSize="@dimen/zt_11sp" />
+
+            <com.ubiRobot.view.MText
+                android:id="@+id/robot_total_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="--"
+                android:textColor="@color/zt_fff"
+                android:textSize="@dimen/zt_24sp"
+                app:customTFont="BEBAS__.ttf"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

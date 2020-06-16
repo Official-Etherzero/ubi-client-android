@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_bg"
+    android:orientation="vertical"
+    tools:context=".modules.robot.robotBuy.RobotBuyActivity">
+
+    <include layout="@layout/title_project" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="22dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/robot_home_balance"
+            android:layout_marginBottom="3dp"
+            android:text="@string/robot_card_lab"
+            android:textColor="@color/zt_lab"
+            android:textSize="@dimen/zt_12sp" />
+
+        <com.ubiRobot.view.MText
+            android:id="@+id/robot_buy_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:text="0.00"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_30sp"
+            app:customTFont="BEBAS__.ttf" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/robot_buy_inaction_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:clipToPadding="false" />
+</LinearLayout>
